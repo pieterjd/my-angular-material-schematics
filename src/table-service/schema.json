@@ -1,0 +1,15 @@
+{
+  "properties": {
+    "entityName": {
+      "type": "string",
+      "minLength": 1,
+      "x-prompt": "What is the name of the entity? (Eg. an entity of user results in a userlist component and user service)"
+    },
+    "backendUrl": {
+      "type": "string",
+      "minLength": 1,
+      "x-prompt": "What is the backend url?"
+    }
+  },
+  "required": ["entityName","backendUrl"]
+}

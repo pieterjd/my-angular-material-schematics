@@ -2,8 +2,9 @@
   "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
   "schematics": {
     "table-service": {
-      "description": "A blank schematic.",
-      "factory": "./table-service/index#tableService"
+      "description": "Schematic generating a material table component, a service using a backend url and dedicated route.",
+      "factory": "./table-service/index#tableService",
+      "schema": "./table-service/schema.json"
     }
   }
 }
