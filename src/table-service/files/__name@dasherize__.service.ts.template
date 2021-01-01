@@ -1,0 +1,19 @@
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class <%= classify(name) %>Service {
+  private URL: string = "<%= backendUrl %>";
+  constructor(private http: HttpClient) { }
+
+  public getAll(): Observable<<%= classify(name) %>[]> {
+      return this.http.get<<%= classify(name) %>[]>(this.URL);
+    }
+
+    public save<%= classify(name) %>(<%= camelize(name) %>: <%= classify(name) %>): void {
+      this.http.post(this.URL, <%= camelize(name) %>);
+    }
+
+}

@@ -9,6 +9,12 @@
       "type": "string",
       "minLength": 1,
       "x-prompt": "What is the backend url?"
+    },
+    "servicePath": {
+      "type": "string",
+      "minLength": 1,
+      "default": "",
+      "x-prompt": "path to service?"
     }
   },
   "required": ["entityName","backendUrl"]
